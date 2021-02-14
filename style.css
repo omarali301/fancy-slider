@@ -55,6 +55,20 @@ img {
   display: none;
 }
 
+.closeBtn{
+  border-radius: 5px;
+  padding: 10px;
+  width: 90px;
+  height: 40px;
+}
+
+.closeBtn a{
+
+text-decoration: none;
+font-size: 18px;
+  
+
+}
 @media (max-width: 767px) {
   .justify-content-around.align-items-center.mt-3.gallery-header.mb-2 {
     flex-direction: column;
