@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+<!------------------------------------- menubar added --------------------------------------------------->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-5" href="#">OMAR</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Slider creation</a></li>
+            <li><a class="dropdown-item" href="#">Image providing</a></li>
+            <li><a class="dropdown-item" href="#">Photo shoot</a></li>
+            <li><a class="dropdown-item" href="#">Photo editing</a></li>
+            <li><a class="dropdown-item" href="#">Designing</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link enable" href="#" tabindex="-1" aria-disabled="true">Contact us</a>
+        </li>
+      </ul>
+  
+    </div>
+  </div>
+</nav>
+
+
+<!------------------------------------- menubar end --------------------------------------------------->
+
+
+
+  <div class="container">
+    <h4 class="mt-2 text-center">Search Image for create slider</h4>
+    <div class="form-inline mt-3 d-flex justify-content-center">
+      <div class="input-group col-md-6 mb-2">
+        <input type="text" class="form-control" id="search" placeholder="Search your image.........">
+      </div>
+      <button type="button" id="search-btn" class="btn btn-primary mb-2">Search</button>
+    </div>
+    <section class="images">
+      <div class="justify-content-around align-items-center mt-3 gallery-header mb-2">
+        <h3 class="head-title text-center">Select image for create slider</h3>
+        <div class="input-group col-md-3 mb-2 mb-md-0">
+          <input class="form-control" type ="number" id="duration" placeholder="slider change duration">
+        </div>
+        <button id="create-slider" class="btn btn-primary px-5">Create slider</button>
+      </div>
+      <div class="row gallery">
+
+      </div>
+    </section>
+    <!-- slider -->
+    <div class="main" id="slideDiv">
+      <button><a href="#" onclick="self.close();" target="_blank">Close</a></button>
+      <section class="mt-5" id="sliders">
+
+      </section>
+      <div class="dots d-flex mt-2 w-100 justify-content-center align-items-center bg-light">
+        <span class="dot" onclick="changeItem(-1)"></span>
+        <span class="dot" onclick="changeItem(1)"></span>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  <!-- Optional JavaScript -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
